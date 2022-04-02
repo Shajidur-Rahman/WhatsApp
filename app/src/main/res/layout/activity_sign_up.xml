@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cartunebackground"
+    tools:context=".SIgnUpActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sendicon" />
+
+
+    <EditText
+        android:id="@+id/signUpname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextre1"
+        android:ems="10"
+        android:hint="Enter Your name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:shadowColor="@color/purple_700"
+        android:text="@string/signupname"
+        android:textColor="#6F6868"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        tools:layout_editor_absoluteY="208dp" />
+
+    <EditText
+        android:id="@+id/signUpemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextre1"
+        android:ems="10"
+        android:hint="Enter Your Email"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:shadowColor="@color/purple_700"
+        android:text="@string/signupemail"
+        android:textColor="#6F6868"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/signUpname"
+        app:layout_constraintStart_toStartOf="@+id/signUpname"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <EditText
+        android:id="@+id/signUppass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextre1"
+        android:ems="10"
+        android:hint="Enter your password"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:shadowColor="@color/purple_700"
+        android:text="@string/signuppassword"
+        android:textColor="#6F6868"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/signUpemail"
+        app:layout_constraintStart_toStartOf="@+id/signUpemail"
+        tools:layout_editor_absoluteY="376dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextre1"
+        android:text="SIgn Up"
+        android:textColor="#3E3737"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/signUppass"
+        app:layout_constraintStart_toStartOf="@+id/signUppass"
+        tools:layout_editor_absoluteY="462dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextre1"
+        android:text="Already have a"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        tools:layout_editor_absoluteY="536dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
