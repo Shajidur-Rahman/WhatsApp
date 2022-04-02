@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/edittextre1.xml" value="0.1945" />
+        <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.22291666666666668" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.2046875" />
       </map>
     </option>

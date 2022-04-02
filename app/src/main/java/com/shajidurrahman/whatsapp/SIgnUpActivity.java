@@ -10,5 +10,7 @@ public class SIgnUpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+        this.getSupportActionBar().hide();
+        this.setTitleColor(android.R.color.holo_blue_light);
     }
 }

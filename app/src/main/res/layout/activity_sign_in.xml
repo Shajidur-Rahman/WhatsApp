@@ -8,11 +8,27 @@
     tools:context=".SIgnUpActivity">
 
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:layout_constraintBottom_toTopOf="@+id/signUpname"
+
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,28 +36,10 @@
         app:srcCompat="@drawable/sendicon" />
 
     <EditText
-        android:id="@+id/signUpname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/edittextre1"
-        android:ems="10"
-        android:hint="@string/signupname"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:padding="10dp"
-        android:shadowColor="@color/purple_700"
-        android:textColor="#6F6868"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/signUpemail"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <EditText
         android:id="@+id/signUpemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:background="@drawable/edittextre1"
         android:ems="10"
         android:hint="@string/signupemail"
@@ -50,17 +48,17 @@
         android:padding="10dp"
         android:shadowColor="@color/purple_700"
         android:textColor="#6F6868"
+
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/signUppass"
-        app:layout_constraintEnd_toEndOf="@+id/signUpname"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/signUpname"
-        app:layout_constraintTop_toBottomOf="@+id/signUpname" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/signUppass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/edittextre1"
         android:ems="10"
         android:hint="@string/signuppassword"
@@ -80,6 +78,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/edittextre1"
         android:text="SIgn Up"
         android:textColor="#3E3737"
@@ -94,6 +93,7 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
         android:background="@drawable/edittextre1"
         android:text="Already have a"
         app:layout_constraintBottom_toBottomOf="parent"
