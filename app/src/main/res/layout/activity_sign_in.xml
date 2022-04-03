@@ -4,29 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/cartunebackground"
+    android:background="@drawable/cartoonback"
     tools:context=".SIgnUpActivity">
 
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
-
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
 
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,9 +30,10 @@
         android:hint="@string/signupemail"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
+        android:textColor="?android:textColorPrimary"
+        android:textColorHint="?android:textColorPrimary"
         android:padding="10dp"
         android:shadowColor="@color/purple_700"
-        android:textColor="#6F6868"
 
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
@@ -62,11 +48,12 @@
         android:background="@drawable/edittextre1"
         android:ems="10"
         android:hint="@string/signuppassword"
+        android:textColor="?android:textColorPrimary"
+        android:textColorHint="?android:textColorPrimary"
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:padding="10dp"
         android:shadowColor="@color/purple_700"
-        android:textColor="#6F6868"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="@+id/signUpemail"
@@ -80,9 +67,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:background="@drawable/edittextre1"
-        android:text="SIgn Up"
-        android:textColor="#3E3737"
+        android:text="SIgn In"
         android:textSize="18sp"
+        android:textColor="?android:textColorPrimary"
+        android:textColorHint="?android:textColorPrimary"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="@+id/signUppass"
         app:layout_constraintHorizontal_bias="0.5"
@@ -95,7 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
         android:background="@drawable/edittextre1"
-        android:text="Already have a"
+        android:text="Don't have "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button"
         app:layout_constraintHorizontal_bias="0.5"
